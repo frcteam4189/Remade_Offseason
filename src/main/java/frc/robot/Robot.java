@@ -43,9 +43,9 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
-    oi = new OI(driveTrain, elevator);
     driveTrain = new DriveTrain();
     elevator = new Elevator();
+    oi = new OI(driveTrain, elevator);
     //m_chooser.setDefaultOption("Default Auto", new DriveWithJoySticks());
     // chooser.addOption("My Auto", new MyAutoCommand());
     SmartDashboard.putData("Auto mode", m_chooser);
